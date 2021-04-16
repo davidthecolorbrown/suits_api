@@ -1,28 +1,38 @@
-# Problem
-* Most universities in the country hosts events around campus and off campus. These events are organized   by   college   students   in   most   of   the   cases.    Students   are   clustered   (RSO’s   or Registered Student Organizations)  by  different organizations,    clubs, fraternities around campus. These events are of different types: social, fundraising, tech talks, etc.  Now,  each university has a  website  where  they  post  their  events  for  the  upcoming  weeks.     One needs  to  check the website to add each event to his/her calendar.   These events are just official events and not  allevents  around  the  university  are  included.  Another  limitation  is  that  one  has  no  way  to  trackweekly events. 
-
 # Project Description
-* You are asked to implement a web application that solves the above problems.
-* Any student may register with this application to obtain a user ID and a password.
-* There are three user levels:
- * Super admin, who creates a profile for a university (name, location, description, number of students, pictures, etc.
- * Admin, who owns an RSO and may host events.
- * Student, who uses the application to look up information about the various events.
-* Admins can create events with a name, event category, description, time, date, location, contact phone, and contact email address.
-* A location should be selected from a map (Bing, Google, or open street map) with name, latitude, longitude, etc.
-* To populate the database, one can use feeds (e.g., RSS, XML) from events.ucf.edu.
-* Each admin is affiliated with one university and one or more RSOs.
-* A student user can request to create a new RSO or to join an existent one.
-* A new RSO can be created with at least 5 other students with the same email domain (e.g. @knights.ucf.edu), and one of them should be assigned as an admin.
-* Students can view events in their university by location or by selecting the University they want to see the events from.
-* They can retrieve events according to their level of access or scope. A student should be able to see all the events around their location or from RSOs they are following.
-* There are different types of events (social, fundraising, tech talks, etc.):
-  * Public events can be seen by everyone.
-  * Private events can be seen by the students at the host university.
-  * RSO events can only be seen by members of the RSO.
-* Events can be created without an RSO. Such events must be approved by the super admin.
-* After an event has been published, users can add, remove, and edit comments on the event, as well as rate the event with up to 5 stars.
-* The application should offer some social network integration, e.g., posting from the application to Facebook or Google.
+* setup to allow us to access bluetooth datastream remotely and feed that into Hololens 2.
+
+# project structure
+* note; 'localhost' corresponds to addr '127.0.0.1'
+## frontend: located in './frontend/' and starts frontend server
+* url: 'http://localhost:3000/' or 'http://127.0.0.1:3000/'
+* port: 3000
+## backend: located in './backend/' and starts mongoDB access server
+* url: 'http://localhost:3002/' or 'http://127.0.0.1:3002/'
+* port: 3000
+### calls to api:
+#### vitals (aggregate of all vital measurements)
+##### GET request urls
+* vitals (aggregate of all measurements): 'http://localhost:3002/api/vitals' 
+* GET list of LAST vitals measurement: 'http://localhost:3002/api/vitals/last' 
+##### POST request urls
+
+#### oxygen saturation
+##### GET request urls
+* GET list of ALL oxygen saturation measurements: 'http://localhost:3002/api/oxygen' 
+* GET list of LAST oxygen saturation measurement: 'http://localhost:3002/api/oxygen/last' 
+##### POST request urls
+
+#### heart rate
+##### GET request urls
+* GET list of ALL heartrate measurements: 'http://localhost:3002/api/heartrate' 
+* GET list of LAST heartrate measurement: 'http://localhost:3002/api/heartrate/last' 
+##### POST request urls
+
+#### temperature
+##### GET request urls
+* GET list of ALL temperature measurements: 'http://localhost:3002/api/temp' 
+* GET list of LAST temperature measurement: 'http://localhost:3002/api/temp/last' 
+##### POST request urls
 
 # setup mern app (NodeJS + Express + React + MySQL OR MongoDB)
 ## clone github repo 
@@ -32,7 +42,7 @@
     ```
 * get the github repo url for cloning 
     ```bash
-    # repo_url: https://github.com/davidthecolorbrown/univ_event_organizer-4710.git
+    # repo_url: https://github.com/davidthecolorbrown/suits_api.git
     git clone [repo_url] 
     ```
 ## install node + dependencies for backend
@@ -89,3 +99,6 @@
     # use package manager to load in browser
     npm start
     ```
+## TODO: show how to deploy server to heroku
+## TODO: show arduino code
+## TODO: show how C# code reads bluetooth

@@ -49,7 +49,9 @@ mongoose.connection.on('error', function(error) {
 });
 
 // listen for connects to app at the port listed above
-app.listen(process.env.PORT || PORT, function() {
+//app.listen(process.env.PORT || PORT, function() {
+app.listen(process.env.PORT || PORT, '0.0.0.0', function() {
     //console.log(`Server listening on port ${PORT}.`);
-    console.log('Server is started on 127.0.0.1:'+ (process.env.PORT || PORT));
+    console.log('Server is started on 0.0.0.0:'+ (process.env.PORT || PORT));
+    //console.log('Server is started on 127.0.0.1:'+ (process.env.PORT || PORT));
 });

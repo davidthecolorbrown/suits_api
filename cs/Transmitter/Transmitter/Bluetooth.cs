@@ -41,7 +41,8 @@ namespace Trasmitter
                 SerialPort serialPort = new SerialPort
                 {
                     BaudRate = 9600,
-                    PortName = "/dev/cu.DSDTECHHC-05-DevB"  // Set in Windows Settings->Bluetooth->More Bluetooth Settings->COM Ports (OUTGOING)
+                    PortName = "COM5"
+                    //PortName = "/dev/cu.DSDTECHHC-05-DevB"  // Set in Windows Settings->Bluetooth->More Bluetooth Settings->COM Ports (OUTGOING)
                     //PortName = "dev/cu.HC-05-DevB"  // Set in Windows Settings->Bluetooth->More Bluetooth Settings->COM Ports (OUTGOING)
                 };
                 serialPort.Open();
@@ -49,13 +50,41 @@ namespace Trasmitter
                 // 
                 //int counter = 0;
 
+                // save serial data 
+                //double data = 0.0;
+                var data = "0.0";
+                //BlueTelemetryModel postVitals = new BlueTelemetryModel();
+                BlueTelemetryModel postVitals = new BlueTelemetryModel
+                {
+                    heartrate = Convert.ToDouble(data),
+                    oxygen = Convert.ToDouble(data),
+                    temperature = Convert.ToDouble(data)
+                };
+                //_ = PostJsonHttpClient(postVitals);
+
                 // while a serial port connection exists
                 while (serialPort.IsOpen)
                 {
                     // if serial port contains data, extract
                     while (serialPort.BytesToRead > 0)
                     {
-                        Console.Write(Convert.ToChar(serialPort.ReadChar()));
+                        //Console.Write(Convert.ToChar(serialPort.ReadChar()));
+                        //Console.Write(serialPort.ReadChar());
+                        //Console.Write(serialPort.ReadExisting());
+
+                        // save data from serial port into variable and convert to string in format of double
+                        data = serialPort.ReadExisting() + ".0";
+                        //data = Convert.ToChar(serialPort.ReadChar());
+                        //data = Convert.ToChar(serialPort.ReadChar());
+                        //Console.Write(Convert.ToChar(serialPort.ReadLine()));
+                        //Console.Write(Convert.ToChar(serialPort.ReadLine()));
+                        //Console.WriteLine((double) data);
+                        //Console.WriteLine(data);
+
+                        //postVitals = { BlueTelemetryModel.temperature = data };
+                        postVitals.temperature = Convert.ToDouble(data);
+                        Console.WriteLine(postVitals.temperature);
+                        _ = PostJsonHttpClient(postVitals);
                     }
 
                     // send to arduino through bluetooth comm
@@ -95,6 +124,15 @@ namespace Trasmitter
                 // print counter to terminal to troubleshoot
                 //int counter = 0;
 
+                // POST to server 
+                //var postVitals = new BlueTelemetryModel
+                //{
+                    //heartrate = counter,
+                    //oxygen = 60.0,
+                    //temperature = 70.0
+                //};
+                //_ = PostJsonHttpClient(postVitals);
+
                 // while a serial port connection exists
                 while (serialPort.IsOpen)
                 {
@@ -124,13 +162,16 @@ namespace Trasmitter
                 // get the initialized client
                 HttpClient httpClient = Data.api;
 
+                //
+                //BlueTelemetryModel postVitals = new BlueTelemetryModel();
+
                 // api post request url
                 string url = "http://127.0.0.1:3002/api/vital";
                 //string url = "http://127.0.0.1:3002/api/temp";
                 //string url = "http://127.0.0.1:3002/api/oxygen";
                 //string url = "http://127.0.0.1:3002/api/heartrate";
 
-                Console.WriteLine("BLUETOOTH POST REQUEST" + url);
+                Console.WriteLine("BLUETOOTH POST REQUEST: " + url);
 
                 // send vital json and wait for response from server 
                 var postResponse = await httpClient.PostAsJsonAsync(url, postVitals);

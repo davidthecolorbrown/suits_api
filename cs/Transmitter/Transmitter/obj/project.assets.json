@@ -5557,24 +5557,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/admin/.nuget/packages/": {}
+    "C:\\Users\\David\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/admin/Documents/suits_api/suits/cs/Transmitter/Transmitter/Transmitter.csproj",
+      "projectUniqueName": "C:\\Users\\David\\Documents\\school\\eel4915 - senior design II\\project\\backend\\suits_api\\cs\\Transmitter\\Transmitter\\Transmitter.csproj",
       "projectName": "Transmitter",
-      "projectPath": "/Users/admin/Documents/suits_api/suits/cs/Transmitter/Transmitter/Transmitter.csproj",
-      "packagesPath": "/Users/admin/.nuget/packages/",
-      "outputPath": "/Users/admin/Documents/suits_api/suits/cs/Transmitter/Transmitter/obj/",
+      "projectPath": "C:\\Users\\David\\Documents\\school\\eel4915 - senior design II\\project\\backend\\suits_api\\cs\\Transmitter\\Transmitter\\Transmitter.csproj",
+      "packagesPath": "C:\\Users\\David\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\David\\Documents\\school\\eel4915 - senior design II\\project\\backend\\suits_api\\cs\\Transmitter\\Transmitter\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/admin/.config/NuGet/NuGet.Config"
+        "C:\\Users\\David\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -5625,7 +5632,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

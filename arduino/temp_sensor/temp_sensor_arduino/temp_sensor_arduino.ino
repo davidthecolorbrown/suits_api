@@ -29,17 +29,18 @@ void loop() {
   }
   
   //Serial.print("Sample RAW Bits: ");
-  for (int i = 0; i < 40; i++) {
+  //for (int i = 0; i < 40; i++) {
     //Serial.print((int)data[i]);
-    if (i > 0 && ((i + 1) % 4) == 0) {
-      Serial.print(' ');
-    }
-  }
+    //if (i > 0 && ((i + 1) % 4) == 0) {
+      //Serial.print(' ');
+    //}
+  //}
   Serial.println("");
 
   //Serial.print((int)temperature); Serial.print(" *C, ");
   //Serial.print((int)humidity); Serial.println(" %");
-  Serial.print((int)temperature);
+  //Serial.print((int)temperature);
+  Serial.print(temperature);
   
   // DHT11 sampling rate is 1HZ.
   delay(1000);

@@ -30,3 +30,36 @@
 /Users/admin/Documents/suits_api/suits/cs/Transmitter/Transmitter/obj/Debug/netcoreapp3.1/Transmitter.dll
 /Users/admin/Documents/suits_api/suits/cs/Transmitter/Transmitter/obj/Debug/netcoreapp3.1/Transmitter.pdb
 /Users/admin/Documents/suits_api/suits/cs/Transmitter/Transmitter/obj/Debug/netcoreapp3.1/Transmitter.genruntimeconfig.cache
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\Transmitter.exe
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\Transmitter.deps.json
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\Transmitter.runtimeconfig.json
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\Transmitter.runtimeconfig.dev.json
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\Transmitter.dll
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\Transmitter.pdb
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\Microsoft.Win32.Registry.dll
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\RJCP.SerialPortStream.dll
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\System.IO.Ports.dll
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\runtimes\linux\lib\netstandard2.0\System.IO.Ports.dll
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\runtimes\osx\lib\netstandard2.0\System.IO.Ports.dll
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.IO.Ports.dll
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Security.AccessControl.dll
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\obj\Debug\netcoreapp3.1\Transmitter.csprojAssemblyReference.cache
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\obj\Debug\netcoreapp3.1\Transmitter.AssemblyInfoInputs.cache
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\obj\Debug\netcoreapp3.1\Transmitter.AssemblyInfo.cs
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\obj\Debug\netcoreapp3.1\Transmitter.csproj.CoreCompileInputs.cache
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\obj\Debug\netcoreapp3.1\Transmitter.csproj.CopyComplete
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\obj\Debug\netcoreapp3.1\Transmitter.dll
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\obj\Debug\netcoreapp3.1\Transmitter.pdb
+C:\Users\David\Documents\school\eel4915 - senior design II\project\backend\suits_api\cs\Transmitter\Transmitter\obj\Debug\netcoreapp3.1\Transmitter.genruntimeconfig.cache

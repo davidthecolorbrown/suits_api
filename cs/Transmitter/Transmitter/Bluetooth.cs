@@ -27,8 +27,8 @@ namespace Trasmitter
             //
             //public static SerialPort serialPort = new SerialPort();
             //public SerialPort serialPort { get; set; }
-            //public int baud_rate { get; set; }
-            //public string port_name { get; set; }
+            //public int baudrate { get; set; }
+            //public string portname { get; set; }
             //public bool connected { get; set; }
 
             // constructor initializes serial comm and reads (as own thread) until broken
@@ -36,44 +36,47 @@ namespace Trasmitter
             {
                 //
                 //PortName = "COM7"; // PortNameMac = "dev/cu.HC-05-DevB";
+                //PortName = "dev/cu.HC-05-DevB"  // Set in Windows Settings->Bluetooth->More Bluetooth Settings->COM Ports (OUTGOING)
                 // create a new serial port listener with given baud rate on given windows port
-                //SerialPort serialPort = new SerialPort
-                //{
-                    //BaudRate = 9600,
+                SerialPort serialPort = new SerialPort
+                {
+                    BaudRate = 9600,
+                    PortName = "/dev/cu.DSDTECHHC-05-DevB"  // Set in Windows Settings->Bluetooth->More Bluetooth Settings->COM Ports (OUTGOING)
                     //PortName = "dev/cu.HC-05-DevB"  // Set in Windows Settings->Bluetooth->More Bluetooth Settings->COM Ports (OUTGOING)
-                //};
-                //serialPort.Open();
+                };
+                serialPort.Open();
 
                 // 
                 double counter = 60.0;
 
                 // while a serial port connection exists
-                while (counter < 64.0)
-                //while (serialPort.IsOpen)
+                //while (counter < 64.0)
+                while (serialPort.IsOpen)
                 {
                     // if serial port contains data, extract
-                    //while (serialPort.BytesToRead > 0)
-                    //{
-                        //Console.Write(Convert.ToChar(serialPort.ReadChar()));
-                    //}
+                    while (serialPort.BytesToRead > 0)
+                    {
+                        Console.Write(Convert.ToChar(serialPort.ReadChar()));
+                    }
 
                     // send to arduino through bluetooth comm
-                    //serialPort.WriteLine("PC counter: " + (counter++));
+                    serialPort.WriteLine("PC counter: " + (counter++));
 
                     // POST to server 
-                    var postVitals = new BlueTelemetryModel
-                    {
-                        heartrate = counter,
-                        oxygen = 60.0,
-                        temperature = 70.0
-                    };
-                    _ = PostJsonHttpClient(postVitals);
+                    //var postVitals = new BlueTelemetryModel
+                    //{
+                        //heartrate = counter,
+                        //oxygen = 60.0,
+                        //temperature = 70.0
+                    //};
+                    //_ = PostJsonHttpClient(postVitals);
 
                     // update ctr
                     counter++;
 
                     // check serial port connection and buffer for data every second
-                    Thread.Sleep(1000);
+                    //Thread.Sleep(1000);
+                    Thread.Sleep(100);
 
                     // if serial port closes, break loop
                 }

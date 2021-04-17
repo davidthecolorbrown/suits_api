@@ -25,14 +25,14 @@ namespace Transmitter
 
             // connect to datastream (telemetry, bluetooth, etc)
             Data.InitClient();
+
+            // initialize serial communication through bluetooth
+            //string port = "/dev/cu.DSDTECHHC-05-DevB"  // Set in Windows Settings->Bluetooth->More Bluetooth Settings->COM Ports (OUTGOING)
+            //string port = "dev/cu.HC-05-DevB"  // Set in Windows Settings->Bluetooth->More Bluetooth Settings->COM Ports (OUTGOING)
+            //string port = "COM7";
+            //int baudrate = 9600;
+            //Bluetooth data = new Bluetooth(port, baudrate);
             Bluetooth data = new Bluetooth();
-
-            //await Bluetooth.PostJsonHttpClient();
-
-            // run code if testing something
-            var programRuntime = 2000;
-            //if (config.RUN_TESTS) {}
-            //else { Thread.Sleep(programRuntime); }
 
 
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");

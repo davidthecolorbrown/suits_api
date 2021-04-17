@@ -1,21 +1,19 @@
 ﻿<Properties StartupConfiguration="{27C24037-026C-4F62-A19B-A522FE26CFBB}|Default">
   <MonoDevelop.Ide.ItemProperties.Transmitter PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Transmitter/Bluetooth.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Transmitter/Program.cs">
     <Files>
-      <File FileName="Transmitter/Bluetooth.cs" Line="1" Column="1" />
+      <File FileName="Transmitter/Bluetooth.cs" Line="95" Column="61" />
+      <File FileName="Transmitter/Program.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Transmitter" expanded="True">
             <Node name="Transmitter" expanded="True">
-              <Node name="Bluetooth.cs" selected="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

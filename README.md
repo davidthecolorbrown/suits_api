@@ -36,17 +36,17 @@
 
 # setup mern app (NodeJS + Express + React + MySQL OR MongoDB)
 ## clone github repo 
-* open linux/macOS terminal and navigate to directory you want to store project
+* open linux/macOS terminal (or git bash on windows) and navigate to directory you want to store project:
     ```bash
     cd ./full/path/to/project/dir/
     ```
-* get the github repo url for cloning 
+* get the github repo url for cloning:
     ```bash
     # repo_url: https://github.com/davidthecolorbrown/suits_api.git
     git clone [repo_url] 
     ```
 ## install node + dependencies for backend
-* first install node.js from node website
+* first install node.js from node.js website
 * then use node package manager (npm) to initialize project and download common dependencies (in terminal for main project directory):
     * mandatory dependencies: express, mongoose (mongodb), cors
     * common dependecies: nodemon, body-parser, bootstrap, node-fetch, moment, mocha, node-cron

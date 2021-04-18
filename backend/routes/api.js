@@ -305,8 +305,10 @@ router.get('/vital/last', function(req, res) {
     //console.log(req.query.end_date);
     
     Vital.find().sort({_id:-1}).limit(1).then(function(vitals) {
-        console.log(vitals);
-        res.send(vitals);
+        console.log(vitals[0]);
+        res.send(vitals[0]);
+        //res.send(vital[0].json)
+        //res.send(JSON.stringify(vital[0]));
     });;
 });
 
